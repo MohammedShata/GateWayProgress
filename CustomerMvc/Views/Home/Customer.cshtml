@@ -1,0 +1,31 @@
+﻿@model List<CustomerMvc.Models.Customer>
+
+@{
+    ViewData["Title"] = "Customer";
+    Layout = "_Layout";
+}
+
+<h1>Customer</h1>
+
+<table>
+
+@foreach (var item in Model) 
+{
+        <tr>
+            <td>
+                @item.Id
+            </td>
+            <td>
+                @item.FirstName
+            </td>
+            <td>
+                @item.LastName
+            </td>
+            <td>
+               @item.EmailAddress
+            </td>
+           
+                </tr>
+                
+   }
+</table>

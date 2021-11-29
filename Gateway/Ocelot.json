@@ -1,0 +1,62 @@
+{
+  "Routes": [
+    {
+
+      "DownstreamPathTemplate": "/Customer",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5445
+        }
+      ],
+      "UpstreamPathTemplate": "/Customer",
+      "UpstreamHttpMethod": [ "Get" ],
+      "ReRouteIsCaseSensitive": false,
+      "DownstreamScheme": "http"
+    },
+    {
+      "DownstreamPathTemplate": "/connect/token",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5443
+        }
+      ],
+      "UpstreamPathTemplate": "/connect/token",
+      "UpstreamHttpMethod": [ "POST" ],
+      "ReRouteIsCaseSensitive": false,
+      "DownstreamScheme": "http"
+    }
+
+    //{
+    //  "DownstreamPathTemplate": "/Character/{everything}",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 7002
+    //    }
+    //  ],
+    //  "UpstreamPathTemplate": "/Character/{everything}",
+    //  "UpstreamHttpMethod": [],
+    //  "ReRouteIsCaseSensitive": false,
+    //  "DownstreamScheme": "http"
+    //},
+    //  "DownstreamPathTemplate": "/Character/UpdateData",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 7002
+    //    }
+    //  ],
+    //  "UpstreamPathTemplate": "/Character/UpdateData",
+    //  "UpstreamHttpMethod": [ "PUT" ],
+    //  "ReRouteIsCaseSensitive": false,
+    //  "DownstreamScheme": "http"
+
+    //}
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:7000"
+  }
+
+}

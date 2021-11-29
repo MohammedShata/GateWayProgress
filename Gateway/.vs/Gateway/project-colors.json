@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b7923b00-3296-4b98-8cb9-2f63684cf7da": {
+      "ProjectGuid": "b7923b00-3296-4b98-8cb9-2f63684cf7da",
+      "DisplayName": "Gateway",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
