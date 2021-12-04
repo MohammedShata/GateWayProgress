@@ -5,7 +5,62 @@
       "ProjectGuid": "b7923b00-3296-4b98-8cb9-2f63684cf7da",
       "DisplayName": "Gateway",
       "ColorIndex": 0
+    },
+    "db622a4b-ad1e-403f-8d1e-069814e76936": {
+      "ProjectGuid": "db622a4b-ad1e-403f-8d1e-069814e76936",
+      "DisplayName": "IdentityServer",
+      "ColorIndex": 1
+    },
+    "ec6e1c00-0166-41ca-85bd-bdee24e664f5": {
+      "ProjectGuid": "ec6e1c00-0166-41ca-85bd-bdee24e664f5",
+      "DisplayName": "CustomerMvc",
+      "ColorIndex": 2
+    },
+    "f87b1709-af8e-4e13-9c52-3119fa32afb8": {
+      "ProjectGuid": "f87b1709-af8e-4e13-9c52-3119fa32afb8",
+      "DisplayName": "Customer",
+      "ColorIndex": 3
+    },
+    "cd999ae8-e1c5-4092-99f7-95a918749819": {
+      "ProjectGuid": "cd999ae8-e1c5-4092-99f7-95a918749819",
+      "DisplayName": "IdentityServer4",
+      "ColorIndex": 4
+    },
+    "12adbc43-cd10-4c8d-a8f9-4b18570af1fa": {
+      "ProjectGuid": "12adbc43-cd10-4c8d-a8f9-4b18570af1fa",
+      "DisplayName": "identity_Server",
+      "ColorIndex": 5
+    },
+    "b629d558-7fd5-4463-9147-f8ce457d4dd9": {
+      "ProjectGuid": "b629d558-7fd5-4463-9147-f8ce457d4dd9",
+      "DisplayName": "identity_Server",
+      "ColorIndex": 6
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "a475168a-8278-483a-b824-d8180b0b202a": {
+      "ProjectGuid": "a475168a-8278-483a-b824-d8180b0b202a",
+      "DisplayName": "IdServer4",
+      "ColorIndex": 7
+    },
+    "445f7703-c277-4e7f-9434-943109984d03": {
+      "ProjectGuid": "445f7703-c277-4e7f-9434-943109984d03",
+      "DisplayName": "IdentityServer",
+      "ColorIndex": 8
+    },
+    "2db9044d-93d6-4a39-8e0d-44bb7dd69220": {
+      "ProjectGuid": "2db9044d-93d6-4a39-8e0d-44bb7dd69220",
+      "DisplayName": "IdentityServer4",
+      "ColorIndex": 9
+    },
+    "c0af18da-03c1-4d35-8cdc-3117ef003be3": {
+      "ProjectGuid": "c0af18da-03c1-4d35-8cdc-3117ef003be3",
+      "DisplayName": "IdServer4",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 11
 }

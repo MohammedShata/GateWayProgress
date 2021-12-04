@@ -18,12 +18,10 @@ namespace CustomerMvc.Services
         {
             _logger = logger;
             _identityServerSettings = identityServerSettings;
-            HttpClientHandler clientHandler = new HttpClientHandler();
-            clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
-
+          
             // Pass the handler to httpclient(from you are calling api)
 
-            using var httpClient = new HttpClient(clientHandler);
+            using var httpClient = new HttpClient();
             _discoveryDocument = httpClient.GetDiscoveryDocumentAsync(identityServerSettings.Value.DiscoveryUrl).Result;
             if (_discoveryDocument.IsError)
             {

@@ -6272,11 +6272,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Shata\\Desktop\\CustomerMvc\\CustomerMvc.csproj",
+      "projectUniqueName": "D:\\Ocelot\\Shata\\GateWayProgress\\CustomerMvc\\CustomerMvc.csproj",
       "projectName": "CustomerMvc",
-      "projectPath": "C:\\Users\\Shata\\Desktop\\CustomerMvc\\CustomerMvc.csproj",
+      "projectPath": "D:\\Ocelot\\Shata\\GateWayProgress\\CustomerMvc\\CustomerMvc.csproj",
       "packagesPath": "C:\\Users\\Shata\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Shata\\Desktop\\CustomerMvc\\obj\\",
+      "outputPath": "D:\\Ocelot\\Shata\\GateWayProgress\\CustomerMvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -28,6 +28,15 @@ namespace CustomerMvc
             services.AddControllersWithViews();
             services.Configure<IdentityServerSettings>(Configuration.GetSection("IdentityServerSettings"));
             services.AddScoped<ITokenService, TokenService>();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+     builder => builder
+     .SetIsOriginAllowed((host) => true)
+     .AllowAnyMethod()
+     .AllowAnyHeader()
+     .AllowCredentials());
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,6 +56,7 @@ namespace CustomerMvc
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseCors("CorsPolicy");
 
             app.UseAuthorization();
 

@@ -39,12 +39,13 @@ namespace CustomerMvc.Controllers
 
             using (var client = new HttpClient())
             {
-                var tokenResponse = await _iTokenService.GetToken(scope: "CustomerApi.read");
+                var tokenResponse = await _iTokenService.GetToken(scope: "scope1");
                 client.SetBearerToken(tokenResponse.AccessToken);
 
                 var result = client
-                  .GetAsync("https://localhost:5445/Customer")
+                  .GetAsync("http://localhost:5445/Customer")
                   .Result;
+               
 
                 if (result.IsSuccessStatusCode)
                 {

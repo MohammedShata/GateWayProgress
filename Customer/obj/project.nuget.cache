@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sKIpmZND1O4JsFbrr+j+NOHV4RsjWzxi+aBFcC5Sg7ckzQhFDaF7qTqs5X9OYUdvGFcpXCMHXDprqi+7HpGBLA==",
+  "dgSpecHash": "EE91n0X+4DPBFren83BTEAjFYf76qJG9EByuhvIBy5sHqb6jlspvIf/lZ2CroVu+IOBpkMWtsFeD7ulzzT9NMQ==",
   "success": true,
-  "projectFilePath": "D:\\Ocelot\\Customer\\Customer.csproj",
+  "projectFilePath": "D:\\Ocelot\\Shata\\GateWayProgress\\Customer\\Customer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Shata\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
     "C:\\Users\\Shata\\.nuget\\packages\\identitymodel\\4.0.0\\identitymodel.4.0.0.nupkg.sha512",

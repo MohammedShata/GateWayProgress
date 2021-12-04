@@ -1083,11 +1083,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Ocelot\\Customer\\Customer.csproj",
+      "projectUniqueName": "D:\\Ocelot\\Shata\\GateWayProgress\\Customer\\Customer.csproj",
       "projectName": "Customer",
-      "projectPath": "D:\\Ocelot\\Customer\\Customer.csproj",
+      "projectPath": "D:\\Ocelot\\Shata\\GateWayProgress\\Customer\\Customer.csproj",
       "packagesPath": "C:\\Users\\Shata\\.nuget\\packages\\",
-      "outputPath": "D:\\Ocelot\\Customer\\obj\\",
+      "outputPath": "D:\\Ocelot\\Shata\\GateWayProgress\\Customer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

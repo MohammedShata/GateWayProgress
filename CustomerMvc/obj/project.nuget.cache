@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7t519RydyyYTAEXSk8ER8A0qHUmDpTjVXBUk8eN7gT+2wur+Uj4bSnvurtoqL7I7BztS7d+MwiolJAF00DFEfQ==",
+  "dgSpecHash": "1ua/CE+Ym1qgjnU+/daDKEgc2wH6XY98NicOLCNJE5oD1IQyf1ObhFfX468ulmxcGRDTuYhxQV/vHfMlfp2j8Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Shata\\Desktop\\CustomerMvc\\CustomerMvc.csproj",
+  "projectFilePath": "D:\\Ocelot\\Shata\\GateWayProgress\\CustomerMvc\\CustomerMvc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Shata\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\Shata\\.nuget\\packages\\identitymodel\\5.2.0\\identitymodel.5.2.0.nupkg.sha512",

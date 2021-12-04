@@ -27,14 +27,18 @@ namespace Customer
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllers();
 
-            services.AddAuthentication(defaultScheme: "Bearer").
-                AddIdentityServerAuthentication("Bearer", configureOptions: options =>
-                  {
-                      options.ApiName = "CustomerApi";
-                      options.Authority = "http://localhost:5443";
-                      options.RequireHttpsMetadata = false;
-                  });
+            services.AddAuthentication("Bearer")
+                .AddJwtBearer("Bearer", options =>
+                {
+                    options.Authority = "https://localhost:5443";
+
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateAudience = false
+                    };
+                });
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
@@ -49,9 +53,10 @@ namespace Customer
                 options.AddPolicy("ApiScope", policy =>
                 {
                     policy.RequireAuthenticatedUser();
-                    policy.RequireClaim("scope", "api1");
+                    policy.RequireClaim("scope", "scope1");
                 });
             });
+
             services.AddControllers();
             services.AddScoped<ICustomerRepository, CustomerRepository>();
             services.AddSwaggerGen(c =>
@@ -78,11 +83,17 @@ namespace Customer
 
             app.UseAuthentication();
             app.UseAuthorization();
+
             app.UseCors("CorsPolicy");
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                app.UseEndpoints(endpoints =>
+                {
+                    endpoints.MapControllers()
+                        .RequireAuthorization("ApiScope");
+                });
+
             });
         }
     }

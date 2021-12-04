@@ -32,20 +32,14 @@ namespace Getway
         public  void ConfigureServices(IServiceCollection services)
         {
 
+           // builder.AddDeveloperSigningCredential();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Getway", Version = "v1" });
             });
-            services.AddAuthorization(options =>
-            {
-                options.AddPolicy("ApiScope", policy =>
-                {
-                    policy.RequireAuthenticatedUser();
-                    policy.RequireClaim("scope", "api1");
-                });
-            });
+           
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
